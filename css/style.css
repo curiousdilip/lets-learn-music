@@ -9,28 +9,27 @@ ul {
   margin: 0;
 }
 
-nav {
-  box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.5);
+header nav {
+  transition: all 0.3 ease;
 }
-nav .navbar-nav .nav-item {
+header nav .navbar-nav .nav-item {
   padding: 0 50px 0 0;
 }
-nav .navbar-nav .nav-item .nav-link {
+header nav .navbar-nav .nav-item .nav-link {
   text-decoration: none;
   line-height: 40px;
   font-weight: 600;
   font-size: 13px;
-  color: #181818;
+  color: #fff;
   font-family: "Poppins", sans-serif;
   padding: 0;
 }
-
 @media (max-width: 768px) {
-  .social {
+  header .social {
     margin-top: 20px;
   }
 }
-.social ul {
+header .social ul {
   display: flex;
   align-content: flex-end;
   list-style: none;
@@ -38,7 +37,65 @@ nav .navbar-nav .nav-item .nav-link {
   margin: 0;
   padding: 0;
 }
-.social ul li a {
+header .social ul li a {
   font-size: 15px;
+  color: #fff;
+}
+
+header.scrolled nav {
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.5);
+}
+header.scrolled nav .navbar-nav .nav-item .nav-link {
   color: #181818;
+}
+header.scrolled .social ul li a {
+  color: #000;
+}
+
+#hero {
+  background-image: url(/img/hero_home_02.jpg);
+  background-position-y: 0px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 16em 0;
+}
+#hero .content {
+  font-family: "Poppins", sans-serif;
+}
+#hero .content p {
+  color: #ff8073;
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#hero .content h2 {
+  font-size: 3.8rem;
+  color: #fff;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#hero .content h3 {
+  font-size: 3.8rem;
+  color: #7ec789;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+#hero .content a {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 0 0 3em #ff8073 inset;
+  color: #ffffff;
+  border-radius: 50px;
+  line-height: 1.1;
+  padding: 1.4em 2.6em;
+  font-weight: 600;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  transition: all 300ms ease;
 }/*# sourceMappingURL=style.css.map */
